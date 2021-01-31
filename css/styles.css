@@ -1,0 +1,491 @@
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-custom {
+  background-color: rgb(23, 13, 58) !important;
+}
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.container-fluid {
+  position: relative;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  background-color: rgb(221, 221, 227);
+  background-color: rgb(230 232 241);
+  min-height: calc(100vh - 3.5rem);
+}
+
+#board-settings {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+#board-name {
+  font-weight: 500;
+  color: rgb(47, 40, 74);
+  font-size: 1.2rem;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.board-settings-btn {
+  float: right;
+  right: 0;
+}
+
+.board-settings-btn > i {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.btn-container {
+  position: relative;
+  height: 90vh;
+  display: none;
+}
+#createBoard {
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 1) 0px 30px 60px -30px !important;
+}
+.board {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.list-container {
+  box-sizing: border-box;
+  width: 25%;
+  height: 100%;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(245, 245, 250);
+  background-color: rgb(249 251 253);
+  border-radius: 0.2rem;
+  box-shadow: rgba(50, 50, 93, 0.3) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgb(83 85 117 / 10%) 0px 10px 15px -3px,
+    rgb(7 2 39 / 5%) 0px 4px 6px -2px;
+  position: relative;
+}
+
+.inactive-container {
+  background-color: rgb(190, 190, 207) !important;
+  box-shadow: none;
+}
+
+.custom-form-group {
+  display: block;
+}
+.title {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.more {
+  padding: 10px 3px;
+  float: right;
+  top: 0;
+}
+
+.text-dark:hover {
+  text-decoration: none;
+}
+
+.clickToEdit {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  transition: 50ms ease-in;
+  animation: fadeIn ease 20ms;
+}
+
+.border-left-info {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-left: 3px solid #17a2b8;
+}
+
+.card-item {
+  width: 90%;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.littleButton {
+  width: 30px;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 1px 10px;
+}
+
+.littleButton > i {
+  color: #4a4a4a;
+  vertical-align: top;
+}
+
+.littleButton > i:hover {
+  color: rgb(221, 221, 227);
+}
+
+.editable {
+  display: none;
+  margin: 10px 0;
+  transition: 50ms ease-in;
+  animation: fadeIn ease 50ms;
+  -webkit-animation: fadeIn ease 50ms;
+  -moz-animation: fadeIn ease 50ms;
+  -o-animation: fadeIn ease 50ms;
+  -ms-animation: fadeIn ease 50ms;
+
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.new {
+  margin: 10px 0;
+}
+
+.save,
+.title-save,
+.delete-element {
+  margin-top: 10px;
+}
+
+.edit-title {
+  width: 100%;
+  transition: 10ms ease-in-out;
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.form-container {
+  display: none;
+  margin: 5px;
+}
+/*
+.update-board {
+  display: none;
+}
+
+.edit-title-input {
+  display: none;
+}*/
+
+.my-handle {
+  color: rgb(164, 164, 172);
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.new-element {
+  display: none;
+  display: block;
+}
+
+.add-card {
+  transition: 50ms ease-out;
+  animation: fadeIn ease 20ms;
+  -webkit-animation: fadeIn ease 20ms;
+  -moz-animation: fadeIn ease 20ms;
+  -o-animation: fadeIn ease 20ms;
+  -ms-animation: fadeIn ease 20ms;
+}
+
+.taskName {
+  margin: 10px 0;
+}
+
+.add_column {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgb(201, 201, 215);
+  border: 1px solid rgb(165, 165, 189);
+  color: rgb(109, 109, 136);
+}
+
+.settings {
+  float: right;
+  margin-top: 10px;
+}
+
+.standard-border {
+  border-left: 3px solid rgb(23, 13, 58, 0.5);
+}
+
+.b-red {
+  border-left: 3px solid #d9534f;
+}
+.b-orange {
+  border-left: 3px solid #f7ad45;
+}
+.b-yellow {
+  border-left: 3px solid #f7cf54;
+}
+.b-green {
+  border-left: 3px solid #02b875;
+}
+.b-blue {
+  border-left: 3px solid #4582ec;
+}
+.b-pink {
+  border-left: 3px solid #db8fb7;
+}
+
+/*
+.element:nth-child(2) > .clickToEdit {
+  border-left: 3px solid #d9534f;
+}
+
+.element:nth-child(5) > .clickToEdit {
+  border-left: 3px solid #f0ad4e;
+}*/
+
+.change-board {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.create-board {
+  margin: 0 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.create-board i,
+.account-settings i {
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+/*
+.drop-shadow{
+  display: fixed;
+  position: absolute;
+  box-sizing: border-box;
+  width:100%;
+  max-width: 100vw;
+  height:100%;
+  max-height: 100vh;
+  background-color: rgba(1,1,1,0.4);
+  top:0;
+  left:0;
+  z-index:100;
+}*/
+
+/* Test and debugging classes */
+
+.block {
+  display: block;
+  transition: 50ms ease-out;
+  animation: fadeIn ease 20ms;
+  -webkit-animation: fadeIn ease 20ms;
+  -moz-animation: fadeIn ease 20ms;
+  -o-animation: fadeIn ease 20ms;
+  -ms-animation: fadeIn ease 20ms;
+}
+
+.loader {
+  border: 5px solid #cbcbd1;
+  border-radius: 50%;
+  border-top: 5px solid #170d3a;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 30px auto;
+}
+
+.label-radio {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.radio {
+  display: none;
+}
+
+.color-box {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  border: 1px solid rgba(221, 221, 221, 0.3);
+  border-radius: 0.25rem;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: #d9534f;
+}
+.yellow {
+  background-color: #f7cf54;
+}
+
+.color-box .checkmark {
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.color-box input:checked + .checkmark {
+  display: block;
+  text-align: center;
+}
+
+.radio:checked + .color-box {
+  outline: 2px solid greenyellow;
+}
+
+.orange {
+  background-color: #f7ad45;
+}
+
+.green {
+  background-color: #02b875;
+}
+.blue {
+  background-color: #4582ec;
+}
+.pink {
+  background-color: #db8fb7;
+}
+
+.labels {
+  vertical-align: middle;
+  font-size: 1rem;
+  padding-right: 10px;
+  margin-bottom: 2px;
+}
+
+.settings-buttons {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.dropdown-settings {
+  margin-top: 10px;
+  border: none;
+  padding: 0;
+}
+
+.modal-body {
+  padding: 20px 30px;
+}
+
+.taskDescription,
+.due-date {
+  margin: 10px 0;
+}
+
+.no-padding {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#editTask input[type="text"],
+#editTask textarea {
+  border: 1px solid rgba(141, 141, 158, 0.8);
+  border-radius: 0.7rem;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
