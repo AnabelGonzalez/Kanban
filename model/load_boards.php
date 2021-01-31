@@ -6,14 +6,9 @@ require_once('db_conn.php');
 
 $pdo_statement = $conn->prepare("SELECT * FROM columns");
 
-//SELECT boardName.boardID, boardName.boardName,columns.columnID, columns.columnName, columns.columnOrder FROM columns INNER JOIN boardName on columns.boardID = boardName.boardID WHERE boardName.boardID = 1
-
 //Execute
 $pdo_statement->execute();
-//Store results
-//$load_boards = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
-//$json = json_encode($load_boards);
-//print_r($json);
+
 $load_boards = $pdo_statement->fetchAll();
 
 foreach($load_boards as $row){

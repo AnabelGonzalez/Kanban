@@ -15,8 +15,6 @@ if(isset($_POST['taskID'])){
     $sql-> bindParam(':label', $label, PDO::PARAM_STR);
     $sql->execute();
 
-
-    //boardID= :boardID, columnID= :columnID,
 }
 
 ?>

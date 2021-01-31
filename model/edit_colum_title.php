@@ -11,7 +11,6 @@ if(isset($_POST['columnID'])){
     $sql = $conn->prepare( "UPDATE `columns` SET `columnName` = :columnName WHERE   `columnID` =:columnID");
 
     $sql-> bindParam(':columnName', $columnName, PDO::PARAM_STR);
-   // $sql-> bindParam(':boardID', $assessment, PDO::PARAM_STR);
     $sql-> bindParam(':columnID', $columnID, PDO::PARAM_STR);
     $sql->execute();
 
@@ -25,10 +24,7 @@ if(isset($_POST['columnID'])){
     header('Content-Type: application/json;charset=utf-8');
     $json = json_encode($title);
     print_r($json);
-    //$load_boards = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
-    //$json = json_encode($load_boards);
-    //print_r($json);
-  
+
 }
 
 ?>

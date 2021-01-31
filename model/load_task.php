@@ -15,9 +15,7 @@ if(isset($_GET['taskID'])){
     header('Content-Type: application/json;charset=utf-8');
     $json = json_encode($task);
     print_r($json);
-    //$load_boards = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
-    //$json = json_encode($load_boards);
-    //print_r($json);
+
 } else {
     echo 'error';
 }

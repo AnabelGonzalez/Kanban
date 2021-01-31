@@ -12,16 +12,10 @@ require_once('db_conn.php');
             $taskName = $_POST['task_name'];
         }
 
-        
-
-        // $boardID = $_POST['boardID'];
         $boardID = '1';
         $columnID = $_POST['columnID'];
         $description = $_POST['description'];
 
-
-        //$sql = "INSERT INTO `testTasks` (`id`, `title`, `description`) VALUES (?, ?, ?);";
-        //$conn->prepare($sql)->execute([NULL, $taskName, $description]);
 
         $sql = "INSERT INTO `tasks` (`taskID`, `taskName`, `boardID`, `columnID`, `description`) VALUES (?, ?, ?, ?, ?)";
 
