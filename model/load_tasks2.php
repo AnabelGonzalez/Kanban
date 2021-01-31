@@ -15,8 +15,6 @@ if(isset($_GET['columnID'])) {
 }
 
 
-//print_r($assessment);
-
 foreach($tasks as $row){
 
   echo  '
