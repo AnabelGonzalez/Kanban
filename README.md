@@ -23,3 +23,8 @@ I've used ajax to submit forms and to send data to the MySQL database. I've used
 ### Project so Far
 
 I've listed below what has been completed so far.
+| Functionality | Stage |
+| ------------- |:-------------:|
+| User Authentication | Not Started |
+| User - Create account | Not Started |
+| Create Boards | Not Started |
