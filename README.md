@@ -25,6 +25,10 @@ I've used ajax to submit forms and to send data to the MySQL database. I've used
 I've listed below what has been completed so far.
 | Functionality | Stage |
 | ------------- |:-------------:|
+| Create, Update and Delete cards | In progress |
+| Cards settings | In progress |
+| Rearrange columns and cards | Started |
 | User Authentication | Not Started |
-| User - Create account | Not Started |
-| Create Boards | Not Started |
+| User - Create & Delete account | Not Started |
+| Create, Update, Delete Boards | Not Started |
+| Create, Update and Delete columns | Not Started |
