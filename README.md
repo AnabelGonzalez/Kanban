@@ -10,9 +10,9 @@ I've used ajax to submit forms and to send data to the MySQL database. I've used
 
 - Users authentication
 - Users can:
-  ⋅⋅* Create boards
-  ⋅⋅* Each board can have several columns just like a Kanban board
-  ⋅⋅* Each column can have several cards
-  ⋅⋅* Cards can be rearranged within the same column or moved to a different column altogheter.
+  - Create boards
+  - Each board can have several columns just like a Kanban board
+  - Each column can have several cards
+  - Cards can be rearranged within the same column or moved to a different column altogheter.
 
 ### Project so Far
