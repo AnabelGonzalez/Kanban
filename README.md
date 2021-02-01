@@ -10,9 +10,16 @@ I've used ajax to submit forms and to send data to the MySQL database. I've used
 
 - Users authentication
 - Users can:
-  - Create boards
-  - Each board can have several columns just like a Kanban board
-  - Each column can have several cards
-  - Cards can be rearranged within the same column or moved to a different column altogheter.
+  - Create an account
+  - Create, Update and Delete boards
+  - Create, Update and Delete columns and cards
+  - Rearrange columns and cards
+  - Delete their own account
+- Each board can have several columns just like a Kanban board
+- Each column can have several cards
+- Cards can be rearranged within the same column or moved to a different column altogheter.
+- Cards have settings that can be modified such us tag colour, due date, etc.
 
 ### Project so Far
+
+I've listed below what has been completed so far.
